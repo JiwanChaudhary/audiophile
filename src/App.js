@@ -1,5 +1,12 @@
+import "./GlobalStyle.css";
+import Navbar from "./components/Navbar/Navbar";
+
 function App() {
-  return <div>Hello</div>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
 
 export default App;
