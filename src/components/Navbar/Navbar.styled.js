@@ -4,16 +4,21 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 export const Header = styled.nav`
   height: 80px;
   background-color: #262626;
+`;
+
+export const Wrapper = styled.div`
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  margin:  0 130px;
 `;
 
 export const Title = styled.div`
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: #fff;
-  margin-left: 130px;
   font-size: 2.2rem;
 `;
 
@@ -35,7 +40,8 @@ export const AnchorTag = styled.a`
 
 export const Cart = styled(AiOutlineShoppingCart)`
   color: #fff;
-  margin-right: 130px;
   width: 30px;
   height: 25px;
 `;
+
+
