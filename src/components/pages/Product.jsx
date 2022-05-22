@@ -7,13 +7,6 @@ import {
   Icon,
   Image,
   Shop,
-  Zspeaker,
-  Zxdescription,
-  Zxheading,
-  ZxspeakerImage,
-  Zxtext,
-  ZButton,
-  Span,
 } from "./Product.styled";
 import Headphone from "../../images/headphone.png";
 import Earphone from "../../images/earphone.png";
@@ -48,20 +41,6 @@ const Product = () => {
           </HeadingIcon>
         </Box>
       </AllProduct>
-
-      <Zspeaker>
-        <ZxspeakerImage src={Speaker}></ZxspeakerImage>
-        <Zxtext>
-          <Zxheading>
-            <Span>ZX9</Span>
-            <Span>SPEAKER</Span>
-          </Zxheading>
-          <Zxdescription>Upgrade to premium speakers that are
-phenomenally built to deliver truly remarkable
-sound</Zxdescription>
-          <ZButton>see product</ZButton>
-        </Zxtext>
-      </Zspeaker>
     </>
   );
 };
