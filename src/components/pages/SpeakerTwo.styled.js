@@ -7,7 +7,7 @@ export const Speaker = styled.div`
   font-family: "Poppins", sans-serif;
   margin: 0 130px;
   height: 270px;
-  background-color: #e3e1e1;
+  background-color: #cccaca;
   border-radius: 20px;
 `;
 export const SpeakerTwoText = styled.div`

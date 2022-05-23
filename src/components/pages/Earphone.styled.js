@@ -14,7 +14,7 @@ export const EarphoneImage = styled.img`
 `;
 
 export const EarphoneDes = styled.div`
-  background-color: #e3e1e1;
+  background-color: #cccaca;
   width: 50%;
   border-radius: 20px;
   display: flex;
