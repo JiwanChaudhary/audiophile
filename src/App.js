@@ -1,16 +1,18 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import "./GlobalStyle.css";
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/pages/Home";
-import Product from "./components/pages/Product";
-import SpeakerOne from "./components/pages/SpeakerOne";
-import SpeakerTwo from "./components/pages/SpeakerTwo";
-import Earphone from "./components/pages/Earphone";
-import EarphoneDes from "./components/pages/EarphoneDes";
-import Footer from "./components/pages/Footer";
+import Home from "./components/common/Home";
+import Product from "./components/common/Product";
+import SpeakerOne from "./components/common/SpeakerOne";
+import SpeakerTwo from "./components/common/SpeakerTwo";
+import Earphone from "./components/common/Earphone";
+import EarphoneDes from "./components/common/EarphoneDes";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
       <Home />
       <Product />
@@ -19,7 +21,7 @@ function App() {
       <Earphone />
       <EarphoneDes />
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 

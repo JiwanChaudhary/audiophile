@@ -7,7 +7,7 @@ import {
   Span,
   Zxdescription,
   ZButton,
-} from "./SpeakerOne.styled";
+} from "../styled/SpeakerOne.styled";
 import Speaker from "../../images/speaker.png";
 
 const SpeakerOne = () => {

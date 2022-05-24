@@ -5,7 +5,7 @@ import {
   EarphoneDes,
   EarphoneHeading,
   EarphoneButton,
-} from "./Earphone.styled";
+} from "../styled/Earphone.styled";
 
 import EarphoneX from "../../images/earphonex.jpg";
 

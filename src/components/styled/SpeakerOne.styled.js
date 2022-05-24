@@ -45,4 +45,10 @@ export const ZButton = styled.button`
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    transform: scale(1.1);
+}
 `;

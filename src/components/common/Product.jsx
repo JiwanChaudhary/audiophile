@@ -7,7 +7,7 @@ import {
   Icon,
   Image,
   Shop,
-} from "./Product.styled";
+} from "../styled/Product.styled";
 import Headphone from "../../images/headphone.png";
 import Earphone from "../../images/earphone.png";
 import Speaker from "../../images/speaker.png";

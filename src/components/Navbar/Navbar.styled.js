@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 export const Header = styled.nav`
   height: 80px;
@@ -12,7 +13,7 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #fff;
-  margin:  0 130px;
+  margin: 0 130px;
 `;
 
 export const Title = styled.div`
@@ -20,6 +21,7 @@ export const Title = styled.div`
   font-weight: 600;
   color: #fff;
   font-size: 2.2rem;
+  cursor: pointer;
 `;
 
 export const Menu = styled.ul`
@@ -30,12 +32,16 @@ export const List = styled.li`
   list-style: none;
 `;
 
-export const AnchorTag = styled.a`
+export const AnchorTag = styled(Link)`
   text-decoration: none;
   padding-right: 20px;
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const Cart = styled(AiOutlineShoppingCart)`
@@ -43,5 +49,3 @@ export const Cart = styled(AiOutlineShoppingCart)`
   width: 30px;
   height: 25px;
 `;
-
-

@@ -6,7 +6,7 @@ export const MainFooter = styled.footer`
 `;
 
 export const FooterDiv = styled.div`
-padding-top: 50px;
+  padding-top: 40px;
   margin: 0 130px;
   color: #fff;
   font-family: "Poppins", sans-serif;
@@ -21,6 +21,7 @@ export const Title = styled.div`
   font-weight: 600;
   color: #fff;
   font-size: 2.2rem;
+  cursor: pointer;
 `;
 export const Menu = styled.ul`
   display: flex;
@@ -33,23 +34,29 @@ export const AnchorTag = styled.a`
   padding-left: 20px;
   color: #fff;
   font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+      color: #ff7918;
+  }
 `;
 
 export const ParaLink = styled.div`
-margin: 50px 0;
-display: flex;
-justify-content: space-between;
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
 `;
 export const Paragraph = styled.p`
-width: 650px;
-opacity: 79%;
-`
+  width: 650px;
+  opacity: 79%;
+`;
 export const SocialLink = styled.div`
-display: flex;
-gap: 10px;
-font-size: 25px;
-`
+  display: flex;
+  gap: 10px;
+  font-size: 25px;
+`;
 
 export const CopyRight = styled.p`
-opacity: 79%;
+  opacity: 79%;
 `;

@@ -5,7 +5,7 @@ import {
   SpeakerTwoHeading,
   SpeakerTwoButton,
   SpeakerTwoImage,
-} from "./SpeakerTwo.styled";
+} from "../styled/SpeakerTwo.styled";
 
 import ZSpeakerTwo from "../../images/zx7speaker.png";
 

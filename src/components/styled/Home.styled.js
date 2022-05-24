@@ -54,6 +54,12 @@ padding: 10px 20px;
 color: #fff;
 opacity: 100%;
 font-size: 20px;
+cursor: pointer;
+transition: 0.4s;
+
+&:hover {
+    transform: scale(1.1);
+}
 
 `;
 

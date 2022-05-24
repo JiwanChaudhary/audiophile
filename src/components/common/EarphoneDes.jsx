@@ -7,7 +7,7 @@ import {
   GearDesHeadingSpanOne,
   GearDesText,
   GearDesImage,
-} from "./EarphoneDes.styled";
+} from "../styled/EarphoneDes.styled";
 import BestGear from "../../images/beatgear.jpg";
 
 const EarphoneDes = () => {

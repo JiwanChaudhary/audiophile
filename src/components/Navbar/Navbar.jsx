@@ -16,16 +16,16 @@ const Navbar = () => {
         <Title>audiophile</Title>
         <Menu>
           <List>
-            <AnchorTag>HOME</AnchorTag>
+            <AnchorTag to='/'>HOME</AnchorTag>
           </List>
           <List>
-            <AnchorTag>HEADPHONES</AnchorTag>
+            <AnchorTag to="/headphones">HEADPHONES</AnchorTag>
           </List>
           <List>
-            <AnchorTag>SPEAKERS</AnchorTag>
+            <AnchorTag to='/speakers'>SPEAKERS</AnchorTag>
           </List>
           <List>
-            <AnchorTag>EARPHONES</AnchorTag>
+            <AnchorTag to='/earphones'>EARPHONES</AnchorTag>
           </List>
         </Menu>
         <Cart></Cart>

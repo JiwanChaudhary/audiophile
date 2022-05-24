@@ -18,9 +18,9 @@ export const SpeakerTwoText = styled.div`
   margin-left: 150px;
 `;
 export const SpeakerTwoHeading = styled.h1`
-font-size: 35px;
-letter-spacing: 3px;
-margin-bottom: 10px;
+  font-size: 35px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
 `;
 export const SpeakerTwoButton = styled.button`
   background: none;
@@ -30,5 +30,11 @@ export const SpeakerTwoButton = styled.button`
   text-transform: uppercase;
   font-size: 18px;
   margin-left: -95px;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 export const SpeakerTwoImage = styled.img``;

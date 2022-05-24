@@ -8,7 +8,7 @@ import {
   HeadphoneDescription,
   Button,
   Image,
-} from "./Home.styled";
+} from "../styled/Home.styled";
 
 import  ImageLink  from "../../images/home.png";
 
