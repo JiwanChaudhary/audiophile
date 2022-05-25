@@ -9,19 +9,33 @@ import SpeakerTwo from "./components/common/SpeakerTwo";
 import Earphone from "./components/common/Earphone";
 import EarphoneDes from "./components/common/EarphoneDes";
 import Footer from "./components/footer/Footer";
+import Headphones from "./components/pages/Headphone/Headphones";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Home />
-      <Product />
-      <SpeakerOne />
-      <SpeakerTwo />
-      <Earphone />
-      <EarphoneDes />
-      <Footer />
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Home />
+                <Product />
+                <SpeakerOne />
+                <SpeakerTwo />
+                <Earphone />
+                <EarphoneDes />
+              </>
+            }
+          />
+
+          <Route path="/headphones" element={<Headphones />}/>
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 

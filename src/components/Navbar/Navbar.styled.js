@@ -38,8 +38,10 @@ export const AnchorTag = styled(Link)`
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
+  transition: 0.4s;
 
   &:hover {
+    color: #ff7918;
     cursor: pointer;
   }
 `;

@@ -11,7 +11,7 @@ import {
   Paragraph,
   SocialLink,
   CopyRight,
-} from "../styled/Footer.styled";
+} from "./Footer.styled";
 
 import { FaFacebookF } from "react-icons/fa";
 import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
