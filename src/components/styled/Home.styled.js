@@ -34,8 +34,8 @@ export const HeaderTwo = styled.h1`
 letter-spacing: 5px;
 margin-top: -20px;
 font-size: 2.9rem;
-font-family: "Poppins", sans-serif;
 margin-bottom: 40px;
+font-family: "Poppins", sans-serif;
 
 `;
 

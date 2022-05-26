@@ -10,6 +10,9 @@ import Earphone from "./components/common/Earphone";
 import EarphoneDes from "./components/common/EarphoneDes";
 import Footer from "./components/footer/Footer";
 import Headphones from "./components/pages/Headphone/Headphones";
+import Features from "./components/pages/Headphone/Features";
+import HeadphoneImage from "./components/pages/Headphone/HeadphoneImage";
+import SimilarProduct from "./components/pages/Headphone/SimilarProduct";
 
 function App() {
   return (
@@ -31,7 +34,19 @@ function App() {
             }
           />
 
-          <Route path="/headphones" element={<Headphones />}/>
+          <Route
+            path="/headphones"
+            element={
+              <>
+                <Headphones />
+                <Features />
+                <HeadphoneImage />
+                <SimilarProduct />
+                <Product />
+                <EarphoneDes />
+              </>
+            }
+          />
         </Routes>
         <Footer />
       </BrowserRouter>

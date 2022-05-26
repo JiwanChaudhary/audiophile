@@ -4,7 +4,7 @@ export const BeatGear = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 130px 90px 130px;
+  margin: 90px 130px 90px 130px;
   gap: 20px;
   height: 550px;
   font-family: "Poppins", sans-serif;
