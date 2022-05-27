@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { FaFacebookF } from "react-icons/fa";
+import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 
 export const MainFooter = styled.footer`
   height: 350px;
@@ -9,7 +11,6 @@ export const FooterDiv = styled.div`
   padding-top: 40px;
   margin: 0 130px;
   color: #fff;
-  font-family: "Poppins", sans-serif;
 `;
 
 export const FooterHeader = styled.div`
@@ -34,11 +35,11 @@ export const AnchorTag = styled.a`
   padding-left: 20px;
   color: #fff;
   font-size: 1.3rem;
-  cursor: pointer;
   transition: 0.4s;
 
   &:hover {
-      color: #ff7918;
+    color: #ff7918;
+    cursor: pointer;
   }
 `;
 
@@ -53,8 +54,31 @@ export const Paragraph = styled.p`
 `;
 export const SocialLink = styled.div`
   display: flex;
-  gap: 10px;
-  font-size: 25px;
+  font-size: 30px;
+  gap: 7px;
+  margin-top: 40px;
+`;
+
+export const Facebook = styled(FaFacebookF)`
+  transition: 0.4s;
+  &:hover {
+    cursor: pointer;
+    color: #ff7918;
+  }
+`;
+export const Instagram = styled(AiOutlineInstagram)`
+  transition: 0.4s;
+  &:hover {
+    cursor: pointer;
+    color: #ff7918;
+  }
+`;
+export const Twitter = styled(AiOutlineTwitter)`
+  transition: 0.4s;
+  &:hover {
+    cursor: pointer;
+    color: #ff7918;
+  }
 `;
 
 export const CopyRight = styled.p`

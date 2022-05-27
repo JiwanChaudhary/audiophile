@@ -6,6 +6,7 @@ height: 700px;
 display: flex;
 justify-content: center;
 align-items: center;
+overflow-y: hidden;
 `;
 
 export const Description = styled.div`

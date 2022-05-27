@@ -5,8 +5,8 @@ import {
   Title,
   Menu,
   List,
-  AnchorTag,
   Cart,
+  AnchorTag,
 } from "./Navbar.styled";
 
 const Navbar = () => {
@@ -16,19 +16,19 @@ const Navbar = () => {
         <Title>audiophile</Title>
         <Menu>
           <List>
-            <AnchorTag to='/'>HOME</AnchorTag>
+            <AnchorTag to="/">HOME</AnchorTag>
           </List>
           <List>
             <AnchorTag to="/headphones">HEADPHONES</AnchorTag>
           </List>
           <List>
-            <AnchorTag to='/speakers'>SPEAKERS</AnchorTag>
+            <AnchorTag to="/speakers">SPEAKERS</AnchorTag>
           </List>
           <List>
-            <AnchorTag to='/earphones'>EARPHONES</AnchorTag>
+            <AnchorTag to="/earphones">EARPHONES</AnchorTag>
           </List>
         </Menu>
-        <Cart></Cart>
+        <Cart />
       </Wrapper>
     </Header>
   );

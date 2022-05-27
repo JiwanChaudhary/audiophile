@@ -10,7 +10,7 @@ import {
   Image,
 } from "../styled/Home.styled";
 
-import  ImageLink  from "../../images/home.png";
+import ImageLink from "../../images/home.png";
 
 const Home = () => {
   return (
@@ -25,6 +25,7 @@ const Home = () => {
         </HeadphoneDescription>
         <Button>SEE PRODUCT</Button>
       </Description>
+
       <Image src={ImageLink} />
     </HomeSection>
   );

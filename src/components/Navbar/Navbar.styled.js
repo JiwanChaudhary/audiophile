@@ -34,9 +34,8 @@ export const List = styled.li`
 
 export const AnchorTag = styled(Link)`
   text-decoration: none;
-  padding-right: 20px;
+  padding-left: 20px;
   color: #fff;
-  font-family: "Poppins", sans-serif;
   font-size: 1.3rem;
   transition: 0.4s;
 
