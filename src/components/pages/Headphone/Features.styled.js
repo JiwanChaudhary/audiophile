@@ -28,7 +28,6 @@ export const NameNumber = styled.div`
 `;
 export const Number = styled.div`
   color: #ff7918;
-  opacity: 72%;
 `;
 export const Name = styled.div``;
 export const Paragraph = styled.p`

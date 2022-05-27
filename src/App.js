@@ -13,6 +13,7 @@ import Headphones from "./components/pages/Headphone/Headphones";
 import Features from "./components/pages/Headphone/Features";
 import HeadphoneImage from "./components/pages/Headphone/HeadphoneImage";
 import SimilarProduct from "./components/pages/Headphone/SimilarProduct";
+import Cart from "./components/pages/Cart/cart";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
               </>
             }
           />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -22,6 +22,7 @@ place-items: center;
 export const Image = styled.img`
   height: 348px;
   width: 373px;
+  margin-bottom: 20px;
 `;
 export const CardHeading = styled.h2`
  font-size: 35px;
