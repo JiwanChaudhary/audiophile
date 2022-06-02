@@ -6,6 +6,11 @@ export const EarphoneDiv = styled.div`
   margin: 90px 130px;
   height: 319px;
   font-family: "Poppins", sans-serif;
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 `;
 
 export const EarphoneImage = styled.img`

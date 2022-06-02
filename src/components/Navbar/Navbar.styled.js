@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export const Header = styled.nav`
   height: 80px;
@@ -14,6 +15,22 @@ export const Wrapper = styled.div`
   justify-content: space-between;
   border-bottom: 1px solid #fff;
   margin: 0 130px;
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+`;
+
+export const HamburgerMenu = styled(GiHamburgerMenu)`
+  color: #fff;
+  font-size: 25px;
+  display: none;
+
+  @media screen and (max-width: 1200px) {
+    display: block;
+    margin-right: -300px;
+  }
 `;
 
 export const Title = styled.div`
@@ -43,10 +60,29 @@ export const AnchorTag = styled(Link)`
     color: #ff7918;
     cursor: pointer;
   }
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 `;
 
 export const Cart = styled(AiOutlineShoppingCart)`
   color: #fff;
   width: 30px;
   height: 25px;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const ExtendedNavbar = styled.div`
+  display: flex;
+  flex-direction: column;
+  background-color: #262626;
+  height: 300px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  width: 100%;
 `;

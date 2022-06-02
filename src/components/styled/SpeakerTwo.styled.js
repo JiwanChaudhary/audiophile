@@ -9,6 +9,11 @@ export const Speaker = styled.div`
   height: 270px;
   background-color: #cccaca;
   border-radius: 20px;
+  
+  @media screen and (max-width: 1200px) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 `;
 export const SpeakerTwoText = styled.div`
   display: flex;

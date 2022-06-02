@@ -6,6 +6,11 @@ export const Zspeaker = styled.div`
   background-color: #ff7918;
   display: flex;
   border-radius: 20px;
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 `;
 
 export const ZxspeakerImage = styled.img`

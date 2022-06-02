@@ -13,7 +13,7 @@ import Headphones from "./components/pages/Headphone/Headphones";
 import Features from "./components/pages/Headphone/Features";
 import HeadphoneImage from "./components/pages/Headphone/HeadphoneImage";
 import SimilarProduct from "./components/pages/Headphone/SimilarProduct";
-import Cart from "./components/pages/Cart/cart";
+import Cart from "./components/pages/Cart/Cart";
 
 function App() {
   return (

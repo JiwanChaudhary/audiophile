@@ -2,16 +2,27 @@ import styled from "styled-components";
 import { AiOutlineRight } from "react-icons/ai";
 
 export const AllProduct = styled.section`
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   align-items: center;
   margin: 130px 130px 0 130px;
   gap: 30px;
+
+  @media screen and (max-width: 1350px) {
+    gap: 10px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 `;
 
 export const Box = styled.div`
   height: 200px;
-  width: 380px;
+  width: auto;
+  max-width: 380px;
   background-color: #bdb9b9;
   position: relative;
 `;
@@ -22,6 +33,17 @@ export const Image = styled.img`
   height: 300px;
   left: 15%;
   top: -65%;
+
+  @media screen and (max-width: 1350px) {
+    left: 10%;
+   }
+
+   @media screen and (max-width: 1250px) { 
+     left: 7%;
+   }
+   @media screen and (max-width: 1220px) { 
+     left: 4%;
+   }
 `;
 
 export const HeadingIcon = styled.div`

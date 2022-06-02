@@ -8,6 +8,11 @@ export const BeatGear = styled.div`
   gap: 20px;
   height: 550px;
   font-family: "Poppins", sans-serif;
+
+  @media screen and (max-width: 1200px) {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
 `;
 
 export const GearDes = styled.div``;
