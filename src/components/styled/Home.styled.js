@@ -7,6 +7,11 @@ export const HomeSection = styled.section`
   justify-content: center;
   align-items: center;
   overflow-y: hidden;
+
+  @media screen and (max-width: 1200px) {
+    display: block;
+  }
+
 `;
 
 export const Description = styled.div`
@@ -15,7 +20,12 @@ export const Description = styled.div`
   margin-right: 0;
 
   @media screen and (max-width: 1200px) {
-    margin-left: 80px;
+    /* margin-left: 80px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
   }
 `;
 
@@ -85,7 +95,15 @@ export const Image = styled.img`
     height: 800px;
   }
 
-  @media screen and (max-width: 1300px) { 
-      height: 750px;
+  @media screen and (max-width: 1300px) {
+    height: 750px;
+  }
+  @media screen and (max-width: 1200px) {
+      background-position: center;
+      position: relative;
+      top: -500px;
+      left: 200px;  
+      height: 1000px;
+      z-index: 1;
   }
 `;

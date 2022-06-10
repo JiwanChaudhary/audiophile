@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Header,
   Wrapper,
@@ -8,16 +8,30 @@ import {
   Cart,
   AnchorTag,
   HamburgerMenu,
+  Cross,
   ExtendedNavbar,
+  MediaButton,
 } from "./Navbar.styled";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [hamburger, setHamburger] = useState(false);
+
   return (
     <>
       <Header>
         <Wrapper>
-          <HamburgerMenu />
+          <MediaButton onClick={() => setHamburger((curr) => !curr)}>
+            {hamburger ? (
+              <>
+                <Cross />
+              </>
+            ) : (
+              <>
+                <HamburgerMenu />
+              </>
+            )}
+          </MediaButton>
           <Title>audiophile</Title>
           <Menu>
             <List>
@@ -37,22 +51,23 @@ const Navbar = () => {
             <Cart />
           </Link>
         </Wrapper>
-        <ExtendedNavbar>
-        <List>
-          <AnchorTag to="/">HOME</AnchorTag>
-        </List>
-        <List>
-          <AnchorTag to="/headphones">HEADPHONES</AnchorTag>
-        </List>
-        <List>
-          <AnchorTag to="/speakers">SPEAKERS</AnchorTag>
-        </List>
-        <List>
-          <AnchorTag to="/earphones">EARPHONES</AnchorTag>
-        </List>
-      </ExtendedNavbar>
+        {hamburger && (
+          <ExtendedNavbar>
+            <List>
+              <AnchorTag to="/">HOME</AnchorTag>
+            </List>
+            <List>
+              <AnchorTag to="/headphones">HEADPHONES</AnchorTag>
+            </List>
+            <List>
+              <AnchorTag to="/speakers">SPEAKERS</AnchorTag>
+            </List>
+            <List>
+              <AnchorTag to="/earphones">EARPHONES</AnchorTag>
+            </List>
+          </ExtendedNavbar>
+        )}
       </Header>
-    
     </>
   );
 };

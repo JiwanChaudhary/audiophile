@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { GiSplitCross } from "react-icons/gi";
 
 export const Header = styled.nav`
   height: 80px;
@@ -19,17 +20,6 @@ export const Wrapper = styled.div`
   @media screen and (max-width: 1200px) {
     margin-left: 80px;
     margin-right: 80px;
-  }
-`;
-
-export const HamburgerMenu = styled(GiHamburgerMenu)`
-  color: #fff;
-  font-size: 25px;
-  display: none;
-
-  @media screen and (max-width: 1200px) {
-    display: block;
-    margin-right: -300px;
   }
 `;
 
@@ -76,13 +66,45 @@ export const Cart = styled(AiOutlineShoppingCart)`
   }
 `;
 
+export const MediaButton = styled.div`
+  display: none;
+  @media screen and (max-width: 1200px) {
+    display: block;
+  }
+
+`;
+export const Cross = styled(GiSplitCross)`
+  color: #fff;
+  font-size: 25px;
+  display: none;
+
+  @media screen and (max-width: 1200px) {
+    display: block;
+    margin-right: -300px;
+  }
+`;
+
+export const HamburgerMenu = styled(GiHamburgerMenu)`
+  color: #fff;
+  font-size: 25px;
+  display: none;
+
+  @media screen and (max-width: 1200px) {
+    display: block;
+    margin-right: -300px;
+  }
+`;
+
 export const ExtendedNavbar = styled.div`
   display: flex;
+  gap: 20px;
   flex-direction: column;
-  background-color: #262626;
-  height: 300px;
-  color: #fff;
   position: absolute;
   left: 0;
-  width: 100%;
+  top: 80px;
+  background-color: #fff;
+  color: #000;
+  height: 250px;
+  width: 300px;
+  text-align: center;
 `;
